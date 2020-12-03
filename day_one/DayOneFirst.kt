@@ -2,7 +2,7 @@ import java.io.File
 import java.io.InputStream
 
 fun main() {
-    val inputStream: InputStream = File("./inputs/DayOne").inputStream()
+    val inputStream: InputStream = File("../inputs/DayOne").inputStream()
     val lineList = mutableListOf<Int>()
     inputStream.bufferedReader().forEachLine { lineList.add(it.toInt()) }
 
