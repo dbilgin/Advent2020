@@ -11,7 +11,7 @@ fun main() {
 
     val result = answers.sumBy { group ->
         group
-            .joinToString("")
+            .joinToString()
             .groupingBy { it }
             .eachCount()
             .count { it.value == group.size }
