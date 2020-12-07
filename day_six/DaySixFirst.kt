@@ -30,4 +30,3 @@ fun main() {
 }
 
 fun String.uniqueCharacters(): List<Char> = this.toCharArray().distinct()
-
