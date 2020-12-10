@@ -25,7 +25,7 @@ fun getSequences(joltList: MutableList<Int>): Long {
     return reversedList
     .fold(limits) { current, next ->
         current.apply {
-            this[next] = listOfNotNull(current[next+1], current[next+2], current[next+3]).sum()
+            current[next] = listOfNotNull(current[next+1], current[next+2], current[next+3]).sum()
         }
     }
     .values
